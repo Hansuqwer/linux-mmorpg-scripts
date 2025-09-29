@@ -1,0 +1,6 @@
+gutitle: "Linux MMORPG Scripts"
+description: "Guides and bash scripts for running MMORPGs on Linux"
+theme: minima
+markdown: kramdown
+plugins:
+  - jekyll-feed
