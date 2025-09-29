@@ -1,0 +1,76 @@
+/* General page style */
+body {
+  font-family: 'Fira Code', monospace;
+  background-color: #121212;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #1f1f1f;
+  padding: 30px 0;
+  text-align: center;
+  border-bottom: 2px solid #444;
+}
+
+header h1 {
+  color: #ff6f61;
+  margin: 0;
+}
+
+header p {
+  color: #aaa;
+  margin: 5px 0 0;
+}
+
+/* Main content */
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Collapsible sections */
+details {
+  background: #2a2a2a;
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 5px;
+}
+
+summary {
+  font-weight: bold;
+  color: #ff6f61;
+  cursor: pointer;
+  outline: none;
+}
+
+details[open] summary {
+  color: #fff;
+}
+
+/* Code blocks */
+pre {
+  background: #1f1f1f !important;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+footer {
+  background: #1f1f1f;
+  text-align: center;
+  padding: 15px 0;
+  border-top: 2px solid #444;
+  color: #888;
+}
+
+footer a {
+  color: #ff6f61;
+  text-decoration: none;
+}
+

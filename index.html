@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Linux MMORPG Scripts</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+</head>
+<body>
+<header>
+<h1>Linux MMORPG Scripts</h1>
+<p>Automatic library of MMORPG scripts for Linux.</p>
+</header>
+
+<main>
+<section id="script-library">
+<h2>Script Library</h2>
+<div id="scripts-container"></div>
+</section>
+</main>
+
+<footer>
+<p>Hosted on <a href="https://github.com/Hansuqwer/linux-mmorpg-scripts">GitHub</a> | &copy; 2025 Hansuqwer</p>
+</footer>
+
+<script>
+// categories must match folder names inside scripts/
+const categories = ["npc","quest","combat","utilities"];
+const container = document.getElementById("scripts-container");
+
+categories.forEach(category => {
+  const details = document.createElement("details");
+  const summary = document.createElement("summary");
+  summary.textContent = category.toUpperCase() + " Scripts";
+  details.appendChild(summary);
+
+  // placeholder for scripts (GitHub Pages can't auto-list folder contents)
+  const pre = document.createElement("pre");
+  const code = document.createElement("code");
+  code.className = "language-bash";
+  code.textContent = `# Put your scripts in scripts/${category}/ and update JSON`;
+  pre.appendChild(code);
+  details.appendChild(pre);
+
+  container.appendChild(details);
+});
+</script>
+</body>
+</html>
